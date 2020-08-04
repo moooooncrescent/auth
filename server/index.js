@@ -3,6 +3,7 @@ const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const serverConfig = require("./config/server");
 require("./models/User");
+require("./models/token");
 
 const app = express();
 app.use(bodyParser.json());
