@@ -7,6 +7,7 @@ require("./models/User");
 const app = express();
 app.use(bodyParser.json());
 require("./routes/user")(app);
+require("./routes/auth")(app);
 
 mongoose
   .connect(serverConfig.mongoData)
