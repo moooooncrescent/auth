@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
+
 function Signin() {
+  const [email, setEmail] = useState("");
+  console.log(email);
+  const [password, setPassword] = useState("");
+  console.log(password);
+
   return (
     <div className="signin-page">
       <head>
@@ -19,12 +25,16 @@ function Signin() {
             className="form-control"
             placeholder="Email address"
             required=""
+            onChange={(event) => setEmail(event.target.value)}
+            value={email}
           ></input>
           <input
             type="password"
             className="form-control"
             placeholder="Password"
             required=""
+            onChange={(event) => setPassword(event.target.value)}
+            value={password}
           ></input>
           <button
             className="btn btn-md btn-primary btn-block mb-3 mt-3"

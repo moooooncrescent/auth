@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.css";
+
 function Forgot() {
+  const [email, setEmail] = useState("");
+  console.log(email);
   return (
     <div className="forgot-page">
       <head>
@@ -18,6 +21,8 @@ function Forgot() {
           className="form-control"
           placeholder="Email address"
           required=""
+          onChange={(event) => setEmail(event.target.value)}
+          value={email}
         ></input>
         <button
           className="btn btn-md btn-primary btn-block mb-3 mt-3"
