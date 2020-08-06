@@ -25,6 +25,12 @@ function Signup() {
           placeholder="Password"
           required=""
         ></input>
+        <input
+          type="password"
+          className="form-control"
+          placeholder="Password repeat"
+          required=""
+        ></input>
         <button
           className="btn btn-md btn-primary btn-block mb-3 mt-3"
           id="submit"

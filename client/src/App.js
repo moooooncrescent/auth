@@ -5,6 +5,7 @@ import NotFound from "./pages/404";
 import Forgot from "./pages/auth/forgot";
 import Signin from "./pages/auth/login";
 import Signup from "./pages/auth/register";
+import Home from "./pages/home";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" exact component={Signin} />
         <Route path="/signup" exact component={Signup} />
         <Route path="/forgot" exact component={Forgot} />
+        <Route pat="/home" exact component={Home} />
         <Route component={NotFound} />
       </Switch>
     </Router>

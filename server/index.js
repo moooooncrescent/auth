@@ -21,4 +21,4 @@ mongoose
     console.error(`database connect err ${serverConfig.mongoData}`, err)
   );
 
-app.get("/", (req, res) => res.send("test"));
+app.get("/", (req, res) => res.send("back-end"));
